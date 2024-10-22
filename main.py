@@ -20,22 +20,22 @@ list_split=[]
 #получение колва строк  и проверки 
 k_str=int(input("Введите количество строк "))
 if k_str == 0 or k_str<1:
- print("Введено неправильное значение ")
+        print("Введено неправильное значение ")
 else:
 #ввод строк 
- for i in range(0 , k_str):
-  list_str.append(str(input(f"Введите вашу строку,стоящую под индексом {i} ")))
+    for i in range(0 , k_str):
+            list_str.append(str(input(f"Введите вашу строку,стоящую под индексом {i} ")))
   
 #обьединение строк   
-  joined_string = "".join(list_str)
+joined_string = "".join(list_str)
   
 #разделение строки на слова
-  list_split=joined_string.split()
+list_split=joined_string.split()
   
 #длина исходной строки 
-  len_str=len(list_split)
+len_str=len(list_split)
 #количество уникальных хначений строки 
-  unickly=len(set(list_split))
+unickly=len(set(list_split))
    
    
 #вывод в консоль
